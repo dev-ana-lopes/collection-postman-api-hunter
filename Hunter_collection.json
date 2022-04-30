@@ -1,0 +1,1637 @@
+{
+	"info": {
+		"_postman_id": "5e48ad4a-7f1b-4286-ba2c-b2d918423c2a",
+		"name": "API_Hunter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Leads",
+			"item": [
+				{
+					"name": "Criar novo lead",
+					"item": [
+						{
+							"name": "POST - Cria novo lead",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"{{$randomEmail}}\",\n    \"first_name\": \"{{$randomFirstName}}\",\n    \"last_name\": \"{{$randomLastName}}\",\n    \"position\": \"{{$randomWord}}\",\n    \"company\": \"{{$randomWord}}\",\n    \"company_industry\": \"{{$randomWord}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}leads",
+									"host": [
+										"{{url_base}}leads"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "POST - Criando um novo lead",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"{{$randomEmail}}\",\n    \"first_name\": \"{{$randomFirstName}}\",\n    \"last_name\": \"{{$randomLastName}}\",\n    \"position\": \"{{$randomWord}}\",\n    \"company\": \"{{$randomWord}}\",\n    \"company_industry\": \"{{$randomWord}}\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url_base}}leads",
+											"host": [
+												"{{url_base}}leads"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:55:17 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "location",
+											"value": "https://api.hunter.io/v2/leads/93995670"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"b56403d0cb46a011136f3f3856bd6ae6\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "x-request-id",
+											"value": "b7061d44-6db1-4496-97ac-76328a5faa1c"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.198721"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff11f8dcb7d51ba-GRU"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": 93995670,\n        \"email\": \"talon71@yahoo.com\",\n        \"first_name\": \"Elissa\",\n        \"last_name\": \"Hyatt\",\n        \"position\": \"Customer\",\n        \"company\": \"Markets\",\n        \"company_industry\": \"Taiwan\",\n        \"confidence_score\": null,\n        \"website\": null,\n        \"country_code\": null,\n        \"company_size\": null,\n        \"source\": null,\n        \"linkedin_url\": null,\n        \"phone_number\": null,\n        \"twitter\": null,\n        \"sync_status\": null,\n        \"notes\": null,\n        \"sending_status\": null,\n        \"last_activity_at\": null,\n        \"last_contacted_at\": null,\n        \"verification\": {\n            \"date\": null,\n            \"status\": null\n        },\n        \"leads_list\": {\n            \"id\": 3495823,\n            \"name\": \"Tami Johns\",\n            \"leads_count\": 0\n        },\n        \"created_at\": \"2022-04-20 21:55:16 UTC\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Recuperar todos leads cadastrados",
+					"item": [
+						{
+							"name": "GET - Recupera todos os leads",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}leads",
+									"host": [
+										"{{url_base}}leads"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET - Recuperando todos os leads cadastrados na API",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url_base}}leads",
+											"host": [
+												"{{url_base}}leads"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:57:55 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"15c11b5286f8179dd03162650c4b42da\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "x-request-id",
+											"value": "5d5853fa-613d-4dde-9a59-f31ddea2d5b5"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.093697"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff1236a8ba051ba-GRU"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"leads\": [\n            {\n                \"id\": 93995670,\n                \"email\": \"talon71@yahoo.com\",\n                \"first_name\": \"Elissa\",\n                \"last_name\": \"Hyatt\",\n                \"position\": \"Customer\",\n                \"company\": \"Markets\",\n                \"company_industry\": \"Taiwan\",\n                \"confidence_score\": null,\n                \"website\": null,\n                \"country_code\": null,\n                \"company_size\": null,\n                \"source\": null,\n                \"linkedin_url\": null,\n                \"phone_number\": null,\n                \"twitter\": null,\n                \"sync_status\": null,\n                \"notes\": null,\n                \"sending_status\": null,\n                \"last_activity_at\": null,\n                \"last_contacted_at\": null,\n                \"verification\": {\n                    \"date\": null,\n                    \"status\": null\n                },\n                \"leads_list\": {\n                    \"id\": 3495823,\n                    \"name\": \"Tami Johns\",\n                    \"leads_count\": 1\n                },\n                \"created_at\": \"2022-04-20 21:55:16 UTC\"\n            }\n        ]\n    },\n    \"meta\": {\n        \"count\": 1,\n        \"total\": 1,\n        \"params\": {\n            \"limit\": 20,\n            \"offset\": 0\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "GET - Recupera lead especifico",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}leads/{{id_lead}}",
+									"host": [
+										"{{url_base}}leads"
+									],
+									"path": [
+										"{{id_lead}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET - Recuperando um lead especifico",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url_base}}leads/{{id_lead}}",
+											"host": [
+												"{{url_base}}leads"
+											],
+											"path": [
+												"{{id_lead}}"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:58:13 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"e90c4bb0e3f5000f18b96462de0c133a\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "x-request-id",
+											"value": "4aab82a5-77da-44af-b42d-0f9f2d9639e4"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.059557"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff123ded84f51ba-GRU"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": 93995670,\n        \"email\": \"talon71@yahoo.com\",\n        \"first_name\": \"Elissa\",\n        \"last_name\": \"Hyatt\",\n        \"position\": \"Customer\",\n        \"company\": \"Markets\",\n        \"company_industry\": \"Taiwan\",\n        \"confidence_score\": null,\n        \"website\": null,\n        \"country_code\": null,\n        \"company_size\": null,\n        \"source\": null,\n        \"linkedin_url\": null,\n        \"phone_number\": null,\n        \"twitter\": null,\n        \"sync_status\": null,\n        \"notes\": null,\n        \"sending_status\": null,\n        \"last_activity_at\": null,\n        \"last_contacted_at\": null,\n        \"verification\": {\n            \"date\": null,\n            \"status\": null\n        },\n        \"leads_list\": {\n            \"id\": 3495823,\n            \"name\": \"Tami Johns\",\n            \"leads_count\": 1\n        },\n        \"created_at\": \"2022-04-20 21:55:16 UTC\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Editar lead",
+					"item": [
+						{
+							"name": "PUT - Altera lead",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"{{$randomEmail}}\",\n    \"first_name\": \"{{$randomFirstName}}\",\n    \"last_name\": \"{{$randomLastName}}\",\n    \"position\": \"{{$randomWord}}\",\n    \"company\": \"{{$randomWord}}\",\n    \"company_industry\": \"{{$randomWord}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}leads/{{id_lead}}",
+									"host": [
+										"{{url_base}}leads"
+									],
+									"path": [
+										"{{id_lead}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "PUT - Alterando um lead",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"{{$randomEmail}}\",\n    \"first_name\": \"{{$randomFirstName}}\",\n    \"last_name\": \"{{$randomLastName}}\",\n    \"position\": \"{{$randomWord}}\",\n    \"company\": \"{{$randomWord}}\",\n    \"company_industry\": \"{{$randomWord}}\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url_base}}leads/{{id_lead}}",
+											"host": [
+												"{{url_base}}leads"
+											],
+											"path": [
+												"{{id_lead}}"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:58:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "x-request-id",
+											"value": "3873f01a-ff77-47b0-9e6a-dd05aee64a7a"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.238556"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff12422ab0a51ba-GRU"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Excluir lead",
+					"item": [
+						{
+							"name": "DEL - Exclui lead",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}leads/{{id_lead}}",
+									"host": [
+										"{{url_base}}leads"
+									],
+									"path": [
+										"{{id_lead}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "DEL - Excluindo um lead",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url_base}}leads/{{id_lead}}",
+											"host": [
+												"{{url_base}}leads"
+											],
+											"path": [
+												"{{id_lead}}"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:58:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "x-request-id",
+											"value": "6d8e1cab-7cc3-411d-8841-9deea4a7e47b"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.244764"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff1246e8dd351ba-GRU"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Leads-list",
+			"item": [
+				{
+					"name": "Criar nova lista de lead",
+					"item": [
+						{
+							"name": "POST - Cria nova lista de lead",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"{{$randomFullName}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}leads_lists",
+									"host": [
+										"{{url_base}}leads_lists"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "POST - Criando uma nova lista de lead",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"{{$randomFullName}}\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url_base}}leads_lists",
+											"host": [
+												"{{url_base}}leads_lists"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:58:58 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "location",
+											"value": "https://api.hunter.io/v2/leads_lists/3496997"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"aa7f2c37acd89bc5b2c229d8ca0b1eb1\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "x-request-id",
+											"value": "f922c5e9-20f8-49a1-8806-566016dcef6a"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.107331"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff124f3cf3a51ba-GRU"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": 3496997,\n        \"name\": \"Van MacGyver\",\n        \"leads_count\": 0,\n        \"created_at\": \"2022-04-20 21:58:58 UTC\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Recuperar todas listas de leads cadastradas",
+					"item": [
+						{
+							"name": "GET - Recupera todas as listas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}leads_lists",
+									"host": [
+										"{{url_base}}leads_lists"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET - Recuperando todas as listas de leads já cadastradas",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url_base}}leads_lists",
+											"host": [
+												"{{url_base}}leads_lists"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:59:07 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"9e160ce9829e8d4a7a1edfce35f4bc86\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "x-request-id",
+											"value": "e004bcff-47ff-4345-8f2f-554a3c2e711b"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.064131"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff1252d9fc951ba-GRU"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"leads_lists\": [\n            {\n                \"id\": 3496997,\n                \"name\": \"Van MacGyver\",\n                \"leads_count\": 0,\n                \"created_at\": \"2022-04-20 21:58:58 UTC\"\n            },\n            {\n                \"id\": 3495823,\n                \"name\": \"Tami Johns\",\n                \"leads_count\": 0,\n                \"created_at\": \"2022-04-20 11:53:22 UTC\"\n            },\n            {\n                \"id\": 3495820,\n                \"name\": \"Orlando Romaguera Jr.\",\n                \"leads_count\": 0,\n                \"created_at\": \"2022-04-20 11:49:28 UTC\"\n            },\n            {\n                \"id\": 3495804,\n                \"name\": \"Carol Rodriguez\",\n                \"leads_count\": 0,\n                \"created_at\": \"2022-04-20 11:36:23 UTC\"\n            },\n            {\n                \"id\": 3491291,\n                \"name\": \"Ana julia's leads\",\n                \"leads_count\": 0,\n                \"created_at\": \"2022-04-18 11:23:29 UTC\"\n            }\n        ]\n    },\n    \"meta\": {\n        \"total\": 5,\n        \"params\": {\n            \"limit\": 20,\n            \"offset\": 0\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "GET - Recupera lista especifica",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}leads_lists/{{id_list_lead}}",
+									"host": [
+										"{{url_base}}leads_lists"
+									],
+									"path": [
+										"{{id_list_lead}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET - Recuperando uma lista de lead especifica",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url_base}}leads_lists/{{id_list_lead}}",
+											"host": [
+												"{{url_base}}leads_lists"
+											],
+											"path": [
+												"{{id_list_lead}}"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:59:15 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"740d2766982ebaf722eab2749d685d27\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "x-request-id",
+											"value": "9643ba38-fe4e-4091-8b1d-725523e9bf87"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.048768"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff1255f1f3451ba-GRU"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": 3496997,\n        \"name\": \"Van MacGyver\",\n        \"leads_count\": 0,\n        \"created_at\": \"2022-04-20 21:58:58 UTC\",\n        \"leads\": []\n    },\n    \"meta\": {\n        \"params\": {\n            \"limit\": 20,\n            \"offset\": 0,\n            \"leads_list_id\": 3496997\n        }\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Editar lista de lead",
+					"item": [
+						{
+							"name": "PUT - Altera lista de lead",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"{{$randomFullName}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}leads_lists/{{id_list_lead}}",
+									"host": [
+										"{{url_base}}leads_lists"
+									],
+									"path": [
+										"{{id_list_lead}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "PUT - Alterando uma lista de lead",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"{{$randomFullName}}\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url_base}}leads_lists/{{id_list_lead}}",
+											"host": [
+												"{{url_base}}leads_lists"
+											],
+											"path": [
+												"{{id_list_lead}}"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:59:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "x-request-id",
+											"value": "aad46b5c-68ed-4a72-8aa9-19705d0f5765"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.089924"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff125a7cbb251ba-GRU"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Excluir lista de lead",
+					"item": [
+						{
+							"name": "DEL - Exclui lista de lead",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}leads_lists/{{id_list_lead}}",
+									"host": [
+										"{{url_base}}leads_lists"
+									],
+									"path": [
+										"{{id_list_lead}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "DEL - Excluindo lista de lead",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url_base}}leads_lists/{{id_list_lead}}",
+											"host": [
+												"{{url_base}}leads_lists"
+											],
+											"path": [
+												"{{id_list_lead}}"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 20 Apr 2022 21:59:35 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "permissions-policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "x-user",
+											"value": "3191195"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "x-request-id",
+											"value": "0c544f40-73b7-43c6-98d8-3797dfafb86d"
+										},
+										{
+											"key": "x-runtime",
+											"value": "0.113025"
+										},
+										{
+											"key": "via",
+											"value": "1.1 google"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "6ff125dc8c2d51ba-GRU"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "in",
+				"value": "query",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "api_key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "20dead96d01002c065ee437d60b8f34884ea37bb",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"//verificação de saúde de api",
+					"",
+					"//especificos para GET",
+					"if (pm.request.method == 'GET'){",
+					"    //sucesso de acesso de busca",
+					"    pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"    });",
+					"",
+					"    //status de sucesso",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"OK\");",
+					"    });",
+					"",
+					"}",
+					"",
+					"",
+					"//especificos para GET e POST",
+					"if (pm.request.method == 'GET' || pm.request.method == 'POST' ){",
+					"    // tempo de busca e postagem",
+					"    pm.test(\"Response time is less than 2000ms\", function () {",
+					"        pm.expect(pm.response.responseTime).to.be.below(2000);",
+					"    });",
+					"    ",
+					"}",
+					"",
+					"//especifico para POST",
+					"if (pm.request.method == 'POST'){",
+					"",
+					"    //sucesso ao postar uma requisição",
+					"    pm.test(\"Successful POST request\", function () {",
+					"        pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);",
+					"    });",
+					"",
+					"    //retorno de status creado",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"Created\");",
+					"    });",
+					"",
+					"    // if destinado ao armazenamento de dados do ID do lead criado",
+					"    if (pm.info.requestName == 'POST - Cria novo lead'){",
+					"        pm.environment.set(\"id_lead\", pm.response.json().data.id)",
+					"    } ",
+					"",
+					"    // if destinado ao armazenamento de dados do ID da lista de lead criado",
+					"    if (pm.info.requestName == 'POST - Cria nova lista de lead'){",
+					"        pm.environment.set(\"id_list_lead\", pm.response.json().data.id)",
+					"    }",
+					"",
+					"}",
+					"",
+					"//especificos para PUT e DELETE",
+					"if (pm.request.method == 'PUT' || pm.request.method == 'DELETE' ){",
+					"    //retorna o  status da requisição esperado",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"No Content\");",
+					"    });",
+					"",
+					"    //verifica status de sucesso",
+					"    pm.test(\"Status code is 204\", function () {",
+					"        pm.response.to.have.status(204);",
+					"    });",
+					"    ",
+					"}",
+					"",
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": ""
+		}
+	]
+}
